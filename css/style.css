@@ -1,0 +1,168 @@
+/* Variables de color */
+:root {
+    --color-azul: #394159;
+    --color-azul-claro: #6894A6;
+    --color-crema: #F2CDAC;
+    --color-cobre: #BF8173;
+    --color-blanco: #F2F2F2;
+}
+
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Courier Prime", monospace, "Fira Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    overflow-y: scroll;
+    font-size: 16px;
+}
+
+/* Encabezado */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-azul-claro);
+    width: 100%;
+    height: 200px;
+    margin-bottom: 50px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.contenedor-img-h {
+    width: 500px;
+}
+
+.contenedor-img-h img {
+    width: 100%;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    padding: 10px;
+    text-decoration: none;
+    color: var(--color-blanco);
+}
+
+/* Contenido */
+section {
+    margin-bottom: 50px;
+}
+
+.section-d {
+    padding-left: 30px;
+}
+
+article {
+    margin-bottom: 50px;
+}
+
+.article-p {
+    padding-left: 30px;
+
+}
+
+section h1 {
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    margin-bottom: 16px;
+}
+
+section img {
+    margin-bottom: 16px;
+}
+
+section p {
+    margin-bottom: 16px;
+}
+
+.contenedor-destacado {
+    width: 700px;
+}
+
+.contenedor-destacado img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.contenedor-articulo-principal {
+    width: 700px;
+}
+
+.contenedor-articulo-principal img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+section h2 {
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    margin-bottom: 16px;
+}
+
+/* Barra lateral */
+.contenedor-aside-h {
+    margin-bottom: 50px;
+}
+
+.contenedor-aside-r {
+    margin-bottom: 50px;
+}
+
+.barra-lateral {
+    padding-left: 30px;
+}
+
+.barra-lateral h3 {
+    margin-bottom: 16px;
+}
+
+.barra-lateral h4 {
+    margin-bottom: 16px;
+}
+
+.barra-lateral ul {
+    margin-bottom: 16px;
+    list-style: none;
+}
+
+/* Pie de página */
+footer {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    position: relative;
+    background-color: var(--color-azul-claro);
+    color: var(--color-blanco);
+    clear: both;
+}
+
+footer a {
+    color: var(--color-crema);
+    text-decoration: none;
+}
