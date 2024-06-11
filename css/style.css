@@ -1,39 +1,44 @@
-/* Variables de color */
+/*Medidas media querys : mobile = 480px tablet = 1024*/
+
+/* =============== Variables de Color ================= */
 :root {
     --color-azul: #394159;
     --color-azul-claro: #6894A6;
-    --color-crema: #F2CDAC;
+    --color-verde: #00fca8;
     --color-cobre: #BF8173;
-    --color-blanco: #F2F2F2;
+    --color-celeste: #ecf9ff;
+    --color-negro: #000000;
+    --color-blanco: #ffffff;
 }
 
-/* Estilos generales */
+/* =============== Estilos Generales ================= */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
-    font-family: "Courier Prime", monospace, "Fira Sans", sans-serif;
-    font-weight: 400;
+.cuerpo {
+    background-color: var(--color-celeste);
+    font-family: "Courier Prime", monospace;
+    font-weight: 700;
     font-style: normal;
     overflow-y: scroll;
-    font-size: 16px;
+    font-size: 20px;
 }
 
-/* Encabezado */
+/* =============== Encabezado ================= */
 
-header {
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: var(--color-azul-claro);
     width: 100%;
     height: 200px;
-    margin-bottom: 50px;
     padding-left: 16px;
     padding-right: 16px;
+    color: var(--color-celeste);
 }
 
 .contenedor-img-h {
@@ -60,92 +65,87 @@ nav ul li a {
     color: var(--color-blanco);
 }
 
-/* Contenido */
-section {
-    margin-bottom: 50px;
+nav ul li a:hover {
+    color: var(--color-verde);
 }
 
-.section-d {
-    padding-left: 30px;
+.menu-hamburguesa {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
 }
 
-article {
-    margin-bottom: 50px;
+.line {
+    width: 30px;
+    height: 3px;
+    background-color: var(--color-celeste);
+    margin: 3.5px 0;
+    border-radius: 5px;
 }
 
-.article-p {
-    padding-left: 30px;
-
+/* =============== Estilos Carrusel ================= */
+.seccion-carrusel {
+    margin-top: 100px;
+    margin-bottom: 80px;
 }
 
-section h1 {
+.relacion-aspecto {
+    border-radius: 20px;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    filter: brightness(40%);
+}
+
+.texto-carrusel h5,
+.texto-carrusel p {
+    color: var(--color-celeste);
+    border-radius: 10px;
+}
+
+/* =============== Estilos sección artículos ================= */
+
+.seccion-articulos {
+    margin-bottom: 80px;
+}
+
+.contenedor-articulo h2 {
     font-family: "Anton", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 50px;
-    margin-bottom: 16px;
+    margin-top: 80px;
+    margin-bottom: 80px;
 }
 
-section img {
-    margin-bottom: 16px;
-}
-
-section p {
-    margin-bottom: 16px;
-}
-
-.contenedor-destacado {
-    width: 700px;
-}
-
-.contenedor-destacado img {
+.contenedor-articulo .contenedor-img {
     width: 100%;
-    height: 400px;
+    margin-bottom: 80px;
+    padding: 0;
+}
+
+.contenedor-articulo .contenedor-img img {
+    border: 15px solid var(--color-blanco);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+    aspect-ratio: 16/9;
     object-fit: cover;
 }
 
-.contenedor-articulo-principal {
-    width: 700px;
+.contenedor-articulo .parrafo {
+    text-indent: 50px;
 }
 
-.contenedor-articulo-principal img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
+/* =============== Radio Online ================= */
+
+.radio-online {
+    margin-bottom: 80px;
 }
 
-section h2 {
+.contenedor-aside-r h3 {
     font-family: "Anton", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 30px;
-    margin-bottom: 16px;
-}
-
-/* Barra lateral */
-.contenedor-aside-h {
-    margin-bottom: 50px;
-}
-
-.contenedor-aside-r {
-    margin-bottom: 50px;
-}
-
-.barra-lateral {
-    padding-left: 30px;
-}
-
-.barra-lateral h3 {
-    margin-bottom: 16px;
-}
-
-.barra-lateral h4 {
-    margin-bottom: 16px;
-}
-
-.barra-lateral ul {
-    margin-bottom: 16px;
-    list-style: none;
+    font-size: 50px;
+    margin-bottom: 80px;
 }
 
 /* Pie de página */
@@ -155,14 +155,66 @@ footer {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 80px;
+    height: 120px;
     position: relative;
     background-color: var(--color-azul-claro);
-    color: var(--color-blanco);
+    color: var(--color-celeste);
     clear: both;
 }
 
 footer a {
-    color: var(--color-crema);
+    color: var(--color-verde);
     text-decoration: none;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 1199px) {
+    .contenedor-img-h {
+        width: 370px;
+    }
+
+    .contenedor-img-h img {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+
+    .contenedor-img-h {
+        width: 300px;
+    }
+
+    .contenedor-img-h img {
+        width: 100%;
+    }
+
+    nav ul li {
+        display: block
+    }
+
+    nav {
+        position: relative;
+
+    }
+
+    .menu-hamburguesa {
+        display: flex;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        width: 100%;
+        top: 100%;
+        left: 0;
+        background-color: var(--color-azul-claro);
+        margin: 0;
+        text-align: center;
+        transition: max-height 0.5s ease-in-out;
+    }
+
+    .menu.active {
+        display: flex;
+    }
 }
