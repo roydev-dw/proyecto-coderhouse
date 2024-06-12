@@ -20,11 +20,15 @@
 
 .cuerpo {
     background-color: var(--color-celeste);
-    font-family: "Courier Prime", monospace;
-    font-weight: 700;
+    font-family: "Barlow", sans-serif;
+    font-weight: 300;
     font-style: normal;
     overflow-y: scroll;
-    font-size: 20px;
+    font-size: 22px;
+}
+
+main {
+    padding: 0 20px;
 }
 
 /* =============== Encabezado ================= */
@@ -63,6 +67,11 @@ nav ul li a {
     padding: 10px;
     text-decoration: none;
     color: var(--color-blanco);
+    font-weight: 500;
+}
+
+nav ul li a.active {
+    color: var(--color-verde);
 }
 
 nav ul li a:hover {
@@ -86,20 +95,63 @@ nav ul li a:hover {
 /* =============== Estilos Carrusel ================= */
 .seccion-carrusel {
     margin-top: 100px;
-    margin-bottom: 80px;
+    margin-bottom: 100px;
+}
+
+.carousel-item h3 {
+    font-family: "Freeman", sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    text-transform: uppercase;
 }
 
 .relacion-aspecto {
     border-radius: 20px;
     aspect-ratio: 16/9;
     object-fit: cover;
-    filter: brightness(40%);
+    filter: brightness(50%);
 }
 
 .texto-carrusel h5,
 .texto-carrusel p {
     color: var(--color-celeste);
     border-radius: 10px;
+}
+
+/* =============== Sección Principal ========================= */
+
+.seccion-principal {
+    margin-bottom: 80px;
+}
+
+
+.tarjeta-grande h5 {
+    font-family: "Freeman", sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    text-transform: uppercase;
+}
+
+.tarjeta-grande p {
+    color: var(--color-negro);
+}
+
+.tarjeta-grande button {
+    border: none;
+    border-radius: 7px;
+    background-color: var(--color-verde);
+    padding: 3px 10px;
+}
+
+.tarjeta-grande button a {
+    text-decoration: none;
+    color: var(--color-negro);
+    font-weight: 700;
+}
+
+.tarjeta-grande img {
+    aspect-ratio: 16/9;
+    object-fit: cover;
 }
 
 /* =============== Estilos sección artículos ================= */
@@ -169,6 +221,7 @@ footer a {
 
 /* Media Queries */
 @media only screen and (max-width: 1199px) {
+
     .contenedor-img-h {
         width: 370px;
     }
@@ -208,6 +261,7 @@ footer a {
         width: 100%;
         top: 100%;
         left: 0;
+        gap: 10px;
         background-color: var(--color-azul-claro);
         margin: 0;
         text-align: center;
@@ -216,5 +270,18 @@ footer a {
 
     .menu.active {
         display: flex;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .relacion-aspecto {
+        border-radius: 20px;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+        filter: brightness(100%);
+    }
+
+    .seccion-articulos article p {
+        text-align: justify;
     }
 }
