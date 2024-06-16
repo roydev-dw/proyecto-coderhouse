@@ -291,6 +291,109 @@ nav ul li a:hover {
     text-indent: 50px;
 }
 
+/* ================ Formulario ================== */
+
+.contenedor-formulario {
+    border-radius: 15px;
+    background-image: linear-gradient(to left, #007adf 0%, #00ecbc 100%);
+    margin: 200px 0;
+}
+
+.parrafo-formulario {
+    margin: 50px 0;
+    padding: 0 100px;
+}
+
+.parrafo-formulario h1 {
+    margin-bottom: 90px;
+    color: var(--color-blanco);
+    font-family: "Freeman", sans-serif;
+    font-weight: 400;
+    filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.5));
+}
+
+.parrafo-formulario p {
+    color: var(--color-blanco);
+    text-indent: 50px;
+    font-weight: 500;
+    filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.5));
+
+}
+
+.formulario {
+    margin: 50px 0;
+}
+
+.formulario div label {
+    font-family: "Freeman", sans-serif;
+    font-weight: 400;
+    margin-top: 10px;
+    color: var(--color-blanco);
+    filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.5));
+}
+
+.formulario div input {
+    width: 75%;
+    height: 35px;
+    padding: 0 15px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border-radius: 25px;
+    border: none;
+    background-color: var(--color-blanco);
+    color: var(--color-negro);
+}
+
+.formulario div textarea {
+    border: none;
+    width: 75%;
+    height: 300px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.formulario div button {
+    font-weight: 700;
+    border: none;
+    border-radius: 7px;
+    background-color: var(--color-verde);
+    padding: 3px 10px;
+    margin-top: 30px;
+    transition: all 0.3s ease-in-out;
+}
+
+.formulario div button:hover {
+    border: none;
+    border-radius: 7px;
+    background-color: var(--color-verde);
+    padding: 3px 10px;
+    transform: scale(1.08);
+    filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.3));
+    color: var(--color-blanco);
+
+}
+
+.redes-sociales {
+    border-radius: 15px;
+    background-image: linear-gradient(to left, #007adf 0%, #00ecbc 100%);
+    padding: 80px 0;
+    margin-bottom: 100px;
+}
+
+.redes-sociales a i {
+    font-size: 42px;
+    color: var(--color-blanco);
+}
+
+.redes-sociales a {
+    transition: all 0.5s ease-in-out;
+}
+
+.redes-sociales a:hover {
+    transform: scale(1.5);
+    filter: drop-shadow(0px 0px 7px rgba(0, 0, 0, 0.5));
+}
+
 /* =============== Radio Online ================= */
 
 .radio-online {
@@ -336,7 +439,8 @@ footer a {
     .seccion-articulos,
     .radio-online,
     .titulo-galeria,
-    .bio {
+    .bio,
+    .contenedor-formulario {
         max-width: 900px;
     }
 
@@ -425,6 +529,13 @@ footer a {
     .bio-parrafos p {
         font-size: 18px;
     }
+
+    .contenedor-formulario {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
 }
 
 @media only screen and (max-width: 767px) {
@@ -463,6 +574,18 @@ footer a {
 
     .bio-parrafos p {
         font-size: 18px;
+    }
+
+    .contenedor-formulario {
+        max-width: 380px;
+    }
+
+    .parrafo-formulario {
+        padding: 0 10px;
+    }
+
+    .redes-sociales {
+        max-width: 380px;
     }
 }
 
