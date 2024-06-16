@@ -1,5 +1,3 @@
-/*Medidas media querys : mobile = 480px tablet = 1024*/
-
 /* =============== Variables de Color ================= */
 :root {
     --color-azul: #394159;
@@ -25,10 +23,6 @@
     font-style: normal;
     overflow-y: scroll;
     font-size: 22px;
-}
-
-main {
-    padding: 0 20px;
 }
 
 /* =============== Encabezado ================= */
@@ -93,6 +87,7 @@ nav ul li a:hover {
 }
 
 /* =============== Estilos Carrusel ================= */
+
 .seccion-carrusel {
     margin-top: 100px;
     margin-bottom: 100px;
@@ -124,7 +119,6 @@ nav ul li a:hover {
     margin-bottom: 80px;
 }
 
-
 .tarjeta-grande h5 {
     font-family: "Freeman", sans-serif;
     font-weight: 400;
@@ -132,15 +126,21 @@ nav ul li a:hover {
     text-transform: uppercase;
 }
 
-.tarjeta-grande p {
-    color: var(--color-negro);
-}
-
 .tarjeta-grande button {
     border: none;
     border-radius: 7px;
     background-color: var(--color-verde);
     padding: 3px 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.tarjeta-grande button:hover {
+    border: none;
+    border-radius: 7px;
+    background-color: var(--color-verde);
+    padding: 3px 10px;
+    transform: scale(1.08);
+    filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.3));
 }
 
 .tarjeta-grande button a {
@@ -158,6 +158,7 @@ nav ul li a:hover {
 
 .seccion-articulos {
     margin-bottom: 80px;
+    padding: 0 20px;
 }
 
 .contenedor-articulo h2 {
@@ -195,7 +196,7 @@ nav ul li a:hover {
 }
 
 .titulo-galeria h1 {
-    font-family: "Freeman";
+    font-family: "Freeman", sans-serif;
     font-size: 50px;
     margin-bottom: 30px;
 }
@@ -234,6 +235,62 @@ nav ul li a:hover {
     border-radius: 20px;
 }
 
+/* ================== Sobre mí ================== */
+.fondo-imagen {
+    background-image: linear-gradient(to left, #007adf 0%, #00ecbc 100%);
+    padding: 0;
+}
+
+.fondo-imagen img {
+    transition: all 0.5s ease-in-out;
+}
+
+.fondo-imagen img:hover {
+    transform: translateX(-10px) scale(1.2);
+    filter: saturate(150%) drop-shadow(0px 0px 10px rgb(232, 255, 255));
+}
+
+.bio {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background-color: var(--color-blanco);
+    padding: 100px;
+}
+
+.bio-titulo {
+    margin-bottom: 100px;
+}
+
+.bio-parrafos {
+    padding: 0 50px;
+    margin-bottom: 80px;
+}
+
+.bio-titulo h1 {
+    font-family: "Freeman", sans-serif;
+    font-weight: 400;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.bio-titulo h2 {
+    font-family: "Freeman", sans-serif;
+    font-weight: 400px;
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+.bio-parrafos h3 {
+    font-family: "Freeman", sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.bio-parrafos p {
+    text-indent: 50px;
+}
+
 /* =============== Radio Online ================= */
 
 .radio-online {
@@ -268,7 +325,28 @@ footer a {
 }
 
 /* Media Queries */
-@media only screen and (max-width: 1199px) {
+@media only screen and (max-width: 1400px) {
+
+    .cuerpo {
+        font-size: 18px;
+    }
+
+    .seccion-carrusel,
+    .seccion-principal,
+    .seccion-articulos,
+    .radio-online,
+    .titulo-galeria,
+    .bio {
+        max-width: 900px;
+    }
+
+    .tarjeta-grande h5 {
+        font-size: 24px;
+    }
+
+    .contenedor-articulo h2 {
+        font-size: 24px;
+    }
 
     .contenedor-img-h {
         width: 370px;
@@ -276,6 +354,10 @@ footer a {
 
     .contenedor-img-h img {
         width: 100%;
+    }
+
+    .contenedor-articulo .contenedor-img img {
+        border: 10px solid var(--color-blanco);
     }
 }
 
@@ -320,8 +402,28 @@ footer a {
         display: flex;
     }
 
-    .contenedor-articulo .contenedor-img img {
-        border: 10px solid var(--color-blanco);
+    .bio {
+        max-width: 600px;
+        padding-top: 100px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .bio-parrafos {
+        padding: 0 10px;
+    }
+
+    .bio-titulo h1,
+    .bio-titulo h2 {
+        font-size: 24px;
+    }
+
+    .bio-parrafos h3 {
+        font-size: 20px;
+    }
+
+    .bio-parrafos p {
+        font-size: 18px;
     }
 }
 
@@ -337,12 +439,30 @@ footer a {
         text-align: justify;
     }
 
-    .contenedor-articulo h2 {
-        font-size: 30px;
-    }
-
     .contenedor-articulo .contenedor-img img {
         border: 5px solid var(--color-blanco);
+    }
+
+    .bio {
+        max-width: 400px;
+        padding-top: 100px;
+    }
+
+    .bio-parrafos {
+        padding: 0 10px;
+    }
+
+    .bio-titulo h1,
+    .bio-titulo h2 {
+        font-size: 24px;
+    }
+
+    .bio-parrafos h3 {
+        font-size: 20px;
+    }
+
+    .bio-parrafos p {
+        font-size: 18px;
     }
 }
 
