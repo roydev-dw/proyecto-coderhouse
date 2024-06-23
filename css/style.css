@@ -25,6 +25,20 @@
     font-size: 22px;
 }
 
+.main-contenido h1 {
+    font-family: "Freeman";
+    font-size: 70px;
+    font-weight: 400;
+    margin-top: 100px;
+    padding: 20px 0;
+    text-align: center;
+    background-image: linear-gradient(to left, #007adf 0%, #00ecbc 100%);
+    border-radius: 10px;
+    text-transform: uppercase;
+    color: var(--color-blanco);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
 /* =============== Encabezado ================= */
 
 nav {
@@ -93,7 +107,7 @@ nav ul li a:hover {
     margin-bottom: 100px;
 }
 
-.carousel-item h3 {
+.carousel-item h2 {
     font-family: "Freeman", sans-serif;
     font-weight: 400;
     font-size: 36px;
@@ -107,7 +121,7 @@ nav ul li a:hover {
     filter: brightness(50%);
 }
 
-.texto-carrusel h5,
+.texto-carrusel h2,
 .texto-carrusel p {
     color: var(--color-celeste);
     border-radius: 10px;
@@ -119,7 +133,7 @@ nav ul li a:hover {
     margin-bottom: 80px;
 }
 
-.tarjeta-grande h5 {
+.tarjeta-grande h2 {
     font-family: "Freeman", sans-serif;
     font-weight: 400;
     font-size: 36px;
@@ -195,7 +209,7 @@ nav ul li a:hover {
     margin-bottom: 100px;
 }
 
-.titulo-galeria h1 {
+.titulo-galeria h2 {
     font-family: "Freeman", sans-serif;
     font-size: 50px;
     margin-bottom: 30px;
@@ -236,19 +250,6 @@ nav ul li a:hover {
 }
 
 /* ================== Sobre mí ================== */
-.fondo-imagen {
-    background-image: linear-gradient(to left, #007adf 0%, #00ecbc 100%);
-    padding: 0;
-}
-
-.fondo-imagen img {
-    transition: all 0.5s ease-in-out;
-}
-
-.fondo-imagen img:hover {
-    transform: translateX(-10px) scale(1.2);
-    filter: saturate(150%) drop-shadow(0px 0px 10px rgb(232, 255, 255));
-}
 
 .bio {
     margin-top: 100px;
@@ -266,21 +267,21 @@ nav ul li a:hover {
     margin-bottom: 80px;
 }
 
-.bio-titulo h1 {
+.bio-titulo h2 {
     font-family: "Freeman", sans-serif;
     font-weight: 400;
     font-size: 50px;
     margin-bottom: 10px;
 }
 
-.bio-titulo h2 {
+.bio-titulo h3 {
     font-family: "Freeman", sans-serif;
     font-weight: 400px;
     font-size: 40px;
     margin-bottom: 50px;
 }
 
-.bio-parrafos h3 {
+.bio-parrafos h4 {
     font-family: "Freeman", sans-serif;
     font-weight: 400;
     font-size: 30px;
@@ -304,11 +305,13 @@ nav ul li a:hover {
     padding: 0 100px;
 }
 
-.parrafo-formulario h1 {
+.parrafo-formulario h2 {
     margin-bottom: 90px;
     color: var(--color-blanco);
+    text-transform: uppercase;
     font-family: "Freeman", sans-serif;
     font-weight: 400;
+    font-size: 30px;
     filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.5));
 }
 
@@ -400,7 +403,7 @@ nav ul li a:hover {
     margin-bottom: 80px;
 }
 
-.contenedor-aside-r h3 {
+.contenedor-aside-r h1 {
     font-family: "Freeman", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -427,7 +430,8 @@ footer a {
     text-decoration: none;
 }
 
-/* Media Queries */
+/* ==================== Media Queries ===================== */
+
 @media only screen and (max-width: 1400px) {
 
     .cuerpo {
@@ -444,7 +448,8 @@ footer a {
         max-width: 900px;
     }
 
-    .tarjeta-grande h5 {
+    .tarjeta-grande h2,
+    .titulo-galeria h2 {
         font-size: 24px;
     }
 
@@ -466,6 +471,10 @@ footer a {
 }
 
 @media only screen and (max-width: 1024px) {
+
+    .main-contenido h1 {
+        font-size: 40px;
+    }
 
     .contenedor-img-h {
         width: 300px;
@@ -517,12 +526,12 @@ footer a {
         padding: 0 10px;
     }
 
-    .bio-titulo h1,
-    .bio-titulo h2 {
-        font-size: 24px;
+    .bio-titulo h2,
+    .bio-titulo h3 {
+        font-size: 30px;
     }
 
-    .bio-parrafos h3 {
+    .bio-parrafos h4 {
         font-size: 20px;
     }
 
@@ -534,6 +543,11 @@ footer a {
         display: flex;
         flex-direction: column;
         align-items: center;
+
+    }
+
+    .parrafo-formulario h2 {
+        font-size: 30px;
 
     }
 }
@@ -563,12 +577,12 @@ footer a {
         padding: 0 10px;
     }
 
-    .bio-titulo h1,
-    .bio-titulo h2 {
+    .bio-titulo h2,
+    .bio-titulo h3 {
         font-size: 24px;
     }
 
-    .bio-parrafos h3 {
+    .bio-parrafos h4 {
         font-size: 20px;
     }
 
@@ -585,6 +599,10 @@ footer a {
     }
 
     .redes-sociales {
+        max-width: 380px;
+    }
+
+    .main-contenido .container {
         max-width: 380px;
     }
 }
