@@ -1,15 +1,3 @@
-/* =============== Variables de Color ================= */
-/* psiblemente tendremos que eliminar las variables de css */
-:root {
-    --color-azul: #394159;
-    --color-azul-claro: #6894A6;
-    --color-verde: #00fca8;
-    --color-cobre: #BF8173;
-    --color-celeste: #ecf9ff;
-    --color-negro: #000000;
-    --color-blanco: #ffffff;
-}
-
 /* =============== Estilos Generales ================= */
 * {
     margin: 0;
@@ -18,7 +6,7 @@
 }
 
 .cuerpo {
-    background-color: var(--color-celeste);
+    background-color: #ecf9ff;
     font-family: "Barlow", sans-serif;
     font-weight: 300;
     font-style: normal;
@@ -36,7 +24,7 @@
     background-image: linear-gradient(to left, #007adf 0%, #00ecbc 100%);
     border-radius: 10px;
     text-transform: uppercase;
-    color: var(--color-blanco);
+    color: #ffffff;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
@@ -46,12 +34,12 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--color-azul-claro);
+    background-color: #6894A6;
     width: 100%;
     height: 200px;
     padding-left: 16px;
     padding-right: 16px;
-    color: var(--color-celeste);
+    color: #ecf9ff;
 }
 
 .contenedor-img-h {
@@ -75,16 +63,16 @@ nav ul li {
 nav ul li a {
     padding: 10px;
     text-decoration: none;
-    color: var(--color-blanco);
+    color: #ffffff;
     font-weight: 500;
 }
 
 nav ul li a.active {
-    color: var(--color-verde);
+    color: #00fca8;
 }
 
 nav ul li a:hover {
-    color: var(--color-verde);
+    color: #00fca8;
 }
 
 .menu-hamburguesa {
@@ -96,7 +84,7 @@ nav ul li a:hover {
 .line {
     width: 30px;
     height: 3px;
-    background-color: var(--color-celeste);
+    background-color: #ecf9ff;
     margin: 3.5px 0;
     border-radius: 5px;
 }
@@ -124,7 +112,7 @@ nav ul li a:hover {
 
 .texto-carrusel h2,
 .texto-carrusel p {
-    color: var(--color-celeste);
+    color: #ecf9ff;
     border-radius: 10px;
 }
 
@@ -144,7 +132,7 @@ nav ul li a:hover {
 .tarjeta-grande button {
     border: none;
     border-radius: 7px;
-    background-color: var(--color-verde);
+    background-color: #00fca8;
     padding: 3px 10px;
     transition: all 0.3s ease-in-out;
 }
@@ -152,7 +140,7 @@ nav ul li a:hover {
 .tarjeta-grande button:hover {
     border: none;
     border-radius: 7px;
-    background-color: var(--color-verde);
+    background-color: #00fca8;
     padding: 3px 10px;
     transform: scale(1.08);
     filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.3));
@@ -160,7 +148,7 @@ nav ul li a:hover {
 
 .tarjeta-grande button a {
     text-decoration: none;
-    color: var(--color-negro);
+    color: #000000;
     font-weight: 700;
 }
 
@@ -193,7 +181,7 @@ nav ul li a:hover {
 }
 
 .contenedor-articulo .contenedor-img img {
-    border: 15px solid var(--color-blanco);
+    border: 15px solid #ffffff;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
     aspect-ratio: 16/9;
     object-fit: cover;
@@ -255,7 +243,7 @@ nav ul li a:hover {
 .bio {
     margin-top: 100px;
     margin-bottom: 100px;
-    background-color: var(--color-blanco);
+    background-color: #ffffff;
     padding: 100px;
 }
 
@@ -308,7 +296,7 @@ nav ul li a:hover {
 
 .parrafo-formulario h2 {
     margin-bottom: 90px;
-    color: var(--color-blanco);
+    color: #ffffff;
     text-transform: uppercase;
     font-family: "Freeman", sans-serif;
     font-weight: 400;
@@ -317,7 +305,7 @@ nav ul li a:hover {
 }
 
 .parrafo-formulario p {
-    color: var(--color-blanco);
+    color: #ffffff;
     text-indent: 50px;
     font-weight: 500;
     filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.5));
@@ -332,7 +320,7 @@ nav ul li a:hover {
     font-family: "Freeman", sans-serif;
     font-weight: 400;
     margin-top: 10px;
-    color: var(--color-blanco);
+    color: #ffffff;
     filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.5));
 }
 
@@ -344,8 +332,8 @@ nav ul li a:hover {
     margin-bottom: 10px;
     border-radius: 25px;
     border: none;
-    background-color: var(--color-blanco);
-    color: var(--color-negro);
+    background-color: #ffffff;
+    color: #000000;
 }
 
 .formulario div textarea {
@@ -360,7 +348,7 @@ nav ul li a:hover {
     font-weight: 700;
     border: none;
     border-radius: 7px;
-    background-color: var(--color-verde);
+    background-color: #00fca8;
     padding: 3px 10px;
     margin-top: 30px;
     transition: all 0.3s ease-in-out;
@@ -369,11 +357,11 @@ nav ul li a:hover {
 .formulario div button:hover {
     border: none;
     border-radius: 7px;
-    background-color: var(--color-verde);
+    background-color: #00fca8;
     padding: 3px 10px;
     transform: scale(1.08);
     filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.3));
-    color: var(--color-blanco);
+    color: #ffffff;
 
 }
 
@@ -386,7 +374,7 @@ nav ul li a:hover {
 
 .redes-sociales a i {
     font-size: 42px;
-    color: var(--color-blanco);
+    color: #ffffff;
 }
 
 .redes-sociales a {
@@ -421,13 +409,13 @@ footer {
     width: 100%;
     height: 120px;
     position: relative;
-    background-color: var(--color-azul-claro);
-    color: var(--color-celeste);
+    background-color: #6894A6;
+    color: #ecf9ff;
     clear: both;
 }
 
 footer a {
-    color: var(--color-verde);
+    color: #00fca8;
     text-decoration: none;
 }
 
@@ -467,7 +455,7 @@ footer a {
     }
 
     .contenedor-articulo .contenedor-img img {
-        border: 10px solid var(--color-blanco);
+        border: 10px solid #ffffff;
     }
 }
 
@@ -506,7 +494,7 @@ footer a {
         top: 100%;
         left: 0;
         gap: 10px;
-        background-color: var(--color-azul-claro);
+        background-color: #6894A6;
         margin: 0;
         text-align: center;
         transition: max-height 0.5s ease-in-out;
@@ -566,7 +554,7 @@ footer a {
     }
 
     .contenedor-articulo .contenedor-img img {
-        border: 5px solid var(--color-blanco);
+        border: 5px solid #ffffff;
     }
 
     .bio {
