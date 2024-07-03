@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 h1 {
   font-size: 50px;
   font-family: "Freeman", sans-serif;
@@ -47,27 +48,34 @@ nav {
   height: 200px;
   padding: 0 50px;
 }
+
 nav .contenedor-img-h {
   width: 500px;
 }
+
 nav .contenedor-img-h img {
   width: 100%;
 }
+
 nav ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
+
 nav ul li {
   display: inline;
 }
+
 nav ul li a {
   padding: 10px;
   text-decoration: none;
   color: #ffffff;
   font-weight: 500;
 }
-nav ul li a:hover, nav ul li a.active {
+
+nav ul li a:hover,
+nav ul li a.active {
   color: #00fca8;
 }
 
@@ -90,15 +98,18 @@ nav ul li a:hover, nav ul li a.active {
   margin-top: 100px;
   margin-bottom: 100px;
 }
+
 .seccion-carrusel .relacion-aspecto {
   border-radius: 20px;
   aspect-ratio: 16/9;
   object-fit: cover;
   filter: brightness(50%);
 }
+
 .seccion-carrusel .texto-carrusel h2 {
   text-transform: uppercase;
 }
+
 .seccion-carrusel .texto-carrusel p {
   font-weight: 500;
   font-size: 22px;
@@ -109,9 +120,11 @@ nav ul li a:hover, nav ul li a.active {
   margin-top: 100px;
   margin-bottom: 100px;
 }
+
 .seccion-principal .tarjeta-grande h3 {
   text-transform: uppercase;
 }
+
 .seccion-principal .tarjeta-grande button {
   border: none;
   border-radius: 7px;
@@ -119,10 +132,12 @@ nav ul li a:hover, nav ul li a.active {
   padding: 3px 10px;
   transition: all 0.3s ease-in-out;
 }
+
 .seccion-principal .tarjeta-grande button:hover {
   transform: scale(1.08);
   filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.3));
 }
+
 .seccion-principal .tarjeta-grande button a {
   text-decoration: none;
   color: #000000;
@@ -133,6 +148,7 @@ nav ul li a:hover, nav ul li a.active {
 .radio-online {
   margin-bottom: 100px;
 }
+
 .radio-online h2 {
   margin-bottom: 100px;
   text-transform: uppercase;
@@ -147,6 +163,7 @@ nav ul li a:hover, nav ul li a.active {
   margin-top: 100px;
   padding: 0;
 }
+
 .contenedor-titulo .titulo-pagina {
   padding: 20px 0;
   text-align: center;
@@ -162,21 +179,25 @@ nav ul li a:hover, nav ul li a.active {
   margin-bottom: 100px;
   padding: 0;
 }
+
 .seccion-articulos .contenedor-articulo h2 {
   margin-top: 100px;
   margin-bottom: 100px;
 }
+
 .seccion-articulos .contenedor-img {
   width: 100%;
   margin-bottom: 100px;
   padding: 0;
 }
+
 .seccion-articulos .contenedor-img img {
   border: 15px solid #ffffff;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
   aspect-ratio: 16/9;
   object-fit: cover;
 }
+
 .seccion-articulos .parrafo {
   text-indent: 50px;
 }
@@ -185,10 +206,12 @@ nav ul li a:hover, nav ul li a.active {
 .contenedor-txt .titulo-galeria {
   margin-bottom: 100px;
 }
+
 .contenedor-txt .titulo-galeria h2 {
   margin-top: 100px;
   margin-bottom: 100px;
 }
+
 .contenedor-txt .texto-descarga {
   font-weight: 500;
   text-transform: uppercase;
@@ -209,11 +232,13 @@ nav ul li a:hover, nav ul li a.active {
   transition: transform 0.4s ease-in-out, filter 0.3s ease-in-out;
   filter: saturate(50%);
 }
+
 .item:hover {
   transform: scale(1.05) rotate(1deg);
   cursor: pointer;
   filter: saturate(130%) brightness(100%) drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.7));
 }
+
 .item img {
   width: 100%;
   height: 100%;
@@ -228,19 +253,24 @@ nav ul li a:hover, nav ul li a.active {
   background-color: #ffffff;
   padding: 100px;
 }
+
 .bio-titulo {
   margin-bottom: 100px;
 }
+
 .bio-titulo h2 {
   margin-bottom: 10px;
 }
+
 .bio-parrafos {
   padding: 0 50px;
   margin-bottom: 100px;
 }
+
 .bio-parrafos h4 {
   margin-bottom: 30px;
 }
+
 .bio-parrafos p {
   text-indent: 50px;
 }
@@ -252,24 +282,29 @@ nav ul li a:hover, nav ul li a.active {
   margin-top: 100px;
   margin-bottom: 100px;
 }
+
 .contenedor-formulario .parrafo-formulario {
   margin: 100px 0;
   padding: 0 50px;
 }
+
 .contenedor-formulario h2 {
   margin-bottom: 100px;
   color: #ffffff;
   text-transform: uppercase;
   filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.5));
 }
+
 .contenedor-formulario p {
   color: #ffffff;
   font-weight: 500;
   filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.5));
 }
+
 .contenedor-formulario .formulario {
   margin: 50px 0;
 }
+
 .contenedor-formulario .formulario label {
   font-family: "Freeman", sans-serif;
   font-weight: 400;
@@ -277,6 +312,7 @@ nav ul li a:hover, nav ul li a.active {
   color: #ffffff;
   filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.5));
 }
+
 .contenedor-formulario .formulario input {
   width: 75%;
   height: 35px;
@@ -288,11 +324,13 @@ nav ul li a:hover, nav ul li a.active {
   background-color: #ffffff;
   color: #000000;
 }
+
 .contenedor-formulario .formulario input:focus {
   outline: none;
   border: 1px solid #00fca8;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3), inset 0px 0px 10px #00fca8;
 }
+
 .contenedor-formulario .formulario textarea {
   border: none;
   width: 75%;
@@ -300,11 +338,13 @@ nav ul li a:hover, nav ul li a.active {
   padding: 15px;
   border-radius: 10px;
 }
+
 .contenedor-formulario .formulario textarea:focus {
   outline: none;
   border: 1px solid #00fca8;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3), inset 0px 0px 10px #00fca8;
 }
+
 .contenedor-formulario .formulario button {
   border: none;
   border-radius: 7px;
@@ -313,10 +353,12 @@ nav ul li a:hover, nav ul li a.active {
   transition: all 0.3s ease-in-out;
   margin-top: 30px;
 }
+
 .contenedor-formulario .formulario button:hover {
   transform: scale(1.08);
   filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.3));
 }
+
 .contenedor-formulario .formulario button a {
   text-decoration: none;
   color: #000000;
@@ -329,13 +371,16 @@ nav ul li a:hover, nav ul li a.active {
   padding: 80px 0;
   margin-bottom: 100px;
 }
+
 .redes-sociales a {
   transition: all 0.5s ease-in-out;
 }
+
 .redes-sociales a:hover {
   transform: scale(1.5);
   filter: drop-shadow(0px 0px 7px rgba(0, 0, 0, 0.5));
 }
+
 .redes-sociales a i {
   font-size: 42px;
   color: #ffffff;
@@ -354,15 +399,18 @@ footer {
   color: #ffffff;
   clear: both;
 }
+
 footer p {
   margin: 0;
 }
+
 footer p a {
   color: #00fca8;
   text-decoration: none;
 }
 
 @media only screen and (max-width: 1400px) {
+
   .seccion-carrusel,
   .seccion-principal,
   .seccion-articulos,
@@ -374,35 +422,45 @@ footer p a {
   .redes-sociales {
     max-width: 900px;
   }
+
   nav .contenedor-img-h {
     width: 370px;
   }
+
   nav .contenedor-img-h img {
     width: 100%;
   }
+
   .contenedor-articulo .contenedor-img img {
     border: 10px solid #ffffff;
   }
 }
+
 @media only screen and (max-width: 1024px) {
   .contenedor-titulo .titulo-pagina {
     font-size: 40px;
   }
+
   nav .contenedor-img-h {
     width: 300px;
   }
+
   nav .contenedor-img-h img {
     width: 100%;
   }
+
   nav ul li {
     display: block;
   }
+
   nav {
     position: relative;
   }
+
   .menu-hamburguesa {
     display: flex;
   }
+
   .menu {
     display: none;
     flex-direction: column;
@@ -416,18 +474,22 @@ footer p a {
     text-align: center;
     transition: max-height 0.5s ease-in-out;
   }
+
   .menu.active {
     display: flex;
   }
+
   .contenedor-formulario {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+
   .contenedor-formulario .parrafo-formulario h2 {
     font-size: 30px;
   }
 }
+
 @media only screen and (max-width: 767px) {
   .seccion-carrusel .relacion-aspecto {
     border-radius: 20px;
@@ -435,40 +497,51 @@ footer p a {
     object-fit: cover;
     filter: brightness(80%);
   }
+
   .seccion-articulos .contenedor-articulo p {
     text-align: justify;
   }
+
   .seccion-articulos .contenedor-articulo .contenedor-img img {
     border: 5px solid #ffffff;
   }
+
   .bio {
     max-width: 400px;
     padding: 50px 10px;
   }
+
   .bio-parrafos {
     padding: 0 5px;
   }
+
   .bio-parrafos h4 {
     font-size: 20px;
   }
+
   .bio .bio-titulo h2 {
     font-size: 24px;
   }
+
   .bio .bio-titulo h3 {
     font-size: 24px;
   }
+
   .contenedor-formulario .parrafo-formulario {
     padding: 0 10px;
   }
 }
+
 @media (min-width: 768px) {
   .contenedor-grilla .grande {
     grid-column: span 3;
     grid-row: span 2;
   }
+
   .contenedor-grilla .alto {
     grid-row: span 2;
   }
+
   .contenedor-grilla .ancho {
     grid-column: span 2;
   }
