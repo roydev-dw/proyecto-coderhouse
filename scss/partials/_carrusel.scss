@@ -1,0 +1,22 @@
+/* CARRUSEL */
+.seccion-carrusel {
+  @include margin-tb(100px, 100px);
+
+  .relacion-aspecto {
+    border-radius: $redondeo-alto;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    filter: brightness(50%);
+  }
+
+  .texto-carrusel {
+    h2 {
+      text-transform: uppercase;
+    }
+
+    p {
+      font-weight: $media;
+      font-size: $fuente-grande;
+    }
+  }
+}

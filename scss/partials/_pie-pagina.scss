@@ -1,0 +1,21 @@
+/* PIE DE PÁGINA */
+footer {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  @include tamaños(100%, 120px);
+  position: relative;
+  background-color: $azul;
+  color: $blanco;
+  clear: both;
+
+  p {
+    margin: 0;
+
+    a {
+      color: $verde;
+      text-decoration: none;
+    }
+  }
+}

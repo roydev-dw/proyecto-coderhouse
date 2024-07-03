@@ -1,0 +1,14 @@
+/* TARJETAS */
+.seccion-principal {
+  @include margin-tb(100px, 100px);
+
+  .tarjeta-grande {
+    h3 {
+      text-transform: uppercase;
+    }
+
+    button {
+      @include btn-verde;
+    }
+  }
+}
