@@ -1,0 +1,164 @@
+@media only screen and (max-width: 1400px) {
+
+  .seccion-carrusel,
+  .seccion-principal,
+  .seccion-articulos,
+  .radio-online,
+  .titulo-galeria,
+  .bio,
+  .contenedor-formulario,
+  .contenedor-titulo,
+  .redes-sociales {
+    max-width: 900px;
+  }
+
+  nav {
+    .contenedor-img-h {
+      width: 370px;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  .contenedor-articulo {
+    .contenedor-img img {
+      border: 10px solid $blanco;
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+
+  .contenedor-titulo {
+    .titulo-pagina {
+      font-size: 40px;
+    }
+  }
+
+  nav {
+    .contenedor-img-h {
+      width: 300px;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  nav {
+    ul {
+      li {
+        display: block
+      }
+    }
+  }
+
+  nav {
+    position: relative;
+  }
+
+  .menu-hamburguesa {
+    display: flex;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    left: 0;
+    gap: 10px;
+    background-color: #6894A6;
+    margin: 0;
+    text-align: center;
+    transition: max-height 0.5s ease-in-out;
+
+    &.active {
+      display: flex;
+    }
+  }
+
+  .contenedor-formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .parrafo-formulario h2 {
+      font-size: 30px;
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .seccion-carrusel {
+    .relacion-aspecto {
+      border-radius: $redondeo-alto;
+      aspect-ratio: 1/1;
+      object-fit: cover;
+      filter: brightness(80%);
+    }
+  }
+
+  .seccion-articulos {
+    .contenedor-articulo {
+      p {
+        text-align: justify;
+      }
+
+      .contenedor-img img {
+        border: 5px solid $blanco;
+      }
+    }
+  }
+
+
+  .bio {
+    max-width: 400px;
+    padding: 50px 10px;
+
+    &-parrafos {
+      padding: 0 5px;
+
+      h4 {
+        font-size: 20px;
+      }
+    }
+
+    .bio-titulo {
+      h2 {
+        font-size: 24px;
+      }
+
+      h3 {
+        font-size: 24px;
+      }
+    }
+  }
+
+  .contenedor-formulario {
+    .parrafo-formulario {
+      padding: 0 10px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+
+  .contenedor-grilla {
+    .grande {
+      grid-column: span 3;
+      grid-row: span 2;
+    }
+
+    .alto {
+      grid-row: span 2;
+    }
+
+    .ancho {
+      grid-column: span 2;
+    }
+  }
+}

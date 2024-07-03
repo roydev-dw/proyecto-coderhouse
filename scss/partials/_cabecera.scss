@@ -1,0 +1,52 @@
+/* ENCABEZADO */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $azul;
+  @include tamaños(100%, 200px);
+  padding: 0 50px;
+
+  .contenedor-img-h {
+    width: 500px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      display: inline;
+
+      a {
+        padding: 10px;
+        text-decoration: none;
+        color: $blanco;
+        font-weight: $media;
+
+        &:hover,
+        &.active {
+          color: $verde;
+        }
+      }
+    }
+  }
+}
+
+.menu-hamburguesa {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.line {
+  @include tamaños(30px, 3px);
+  background-color: $blanco;
+  margin: 3.5px 0;
+  border-radius: 5px;
+}

@@ -1,0 +1,15 @@
+// Reset
+@import "./partials/variables";
+@import "./partials/mixin";
+@import "./partials/reset";
+
+// Layout
+@import "./partials/cabecera";
+@import "./partials/carrusel";
+@import "./partials/tarjetas";
+@import "./partials/radio";
+@import "./partials/principal";
+@import "./partials/pie-pagina";
+
+// Media queries
+@import "./partials/mq";
