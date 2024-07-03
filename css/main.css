@@ -339,6 +339,12 @@ nav ul li a.active {
   border-radius: 10px;
 }
 
+.contenedor-formulario .formulario textarea:focus {
+  outline: none;
+  border: 1px solid #00fca8;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3), inset 0px 0px 10px #00fca8;
+}
+
 .contenedor-formulario .formulario button {
   border: none;
   border-radius: 7px;
