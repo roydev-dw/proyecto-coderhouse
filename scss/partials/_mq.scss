@@ -93,6 +93,17 @@
 }
 
 @media only screen and (max-width: 767px) {
+
+  nav {
+    .contenedor-img-h {
+      width: 270px;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
   .seccion-carrusel {
     .relacion-aspecto {
       border-radius: $redondeo-alto;
