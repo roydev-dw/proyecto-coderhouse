@@ -180,7 +180,7 @@
       @include tamaños(75%, 300px);
       padding: 15px;
       border-radius: $redondeo-medio;
-
+      
       &:focus {
         outline: none;
         border: 1px solid $verde;
