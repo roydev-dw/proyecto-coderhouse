@@ -430,7 +430,7 @@ footer p a {
 }
 @media only screen and (max-width: 767px) {
   nav .contenedor-img-h {
-    width: 270px;
+    width: 230px;
   }
   nav .contenedor-img-h img {
     width: 100%;
