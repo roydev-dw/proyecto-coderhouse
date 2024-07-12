@@ -1,6 +1,20 @@
 /* CARRUSEL */
 .seccion-carrusel {
   @include margin-tb(100px, 100px);
+  .carousel-indicators {
+    gap: 30px;
+    button {
+      @include tamaños(60px, 8px);
+      border-radius: $redondeo-bajo;
+      background-color: $blanco;
+      border: none;
+      &:hover,
+      &:focus,
+      &.active {
+        background-color: $verde;
+      }
+    }
+  }
 
   .relacion-aspecto {
     border-radius: $redondeo-alto;

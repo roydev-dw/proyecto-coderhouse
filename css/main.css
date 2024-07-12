@@ -3,24 +3,28 @@ h1 {
   font-size: 50px;
   font-family: "Freeman", sans-serif;
   font-weight: 400;
+  text-wrap: pretty;
 }
 
 h2 {
   font-size: 40px;
   font-family: "Freeman", sans-serif;
   font-weight: 400;
+  text-wrap: pretty;
 }
 
 h3 {
   font-size: 30px;
   font-family: "Freeman", sans-serif;
   font-weight: 400;
+  text-wrap: pretty;
 }
 
 h4 {
   font-size: 20px;
   font-family: "Freeman", sans-serif;
   font-weight: 400;
+  text-wrap: pretty;
 }
 
 * {
@@ -90,6 +94,19 @@ nav ul li a:hover, nav ul li a.active {
   margin-top: 100px;
   margin-bottom: 100px;
 }
+.seccion-carrusel .carousel-indicators {
+  gap: 30px;
+}
+.seccion-carrusel .carousel-indicators button {
+  width: 60px;
+  height: 8px;
+  border-radius: 7px;
+  background-color: #ffffff;
+  border: none;
+}
+.seccion-carrusel .carousel-indicators button:hover, .seccion-carrusel .carousel-indicators button:focus, .seccion-carrusel .carousel-indicators button.active {
+  background-color: #00fca8;
+}
 .seccion-carrusel .relacion-aspecto {
   border-radius: 20px;
   aspect-ratio: 16/9;
@@ -112,18 +129,21 @@ nav ul li a:hover, nav ul li a.active {
 .seccion-principal .tarjeta-grande h3 {
   text-transform: uppercase;
 }
-.seccion-principal .tarjeta-grande button {
+.seccion-principal .tarjeta-grande .card-footer {
+  height: 70px;
+}
+.seccion-principal .tarjeta-grande .card-footer button {
   border: none;
   border-radius: 7px;
   background-color: #00fca8;
-  padding: 3px 10px;
+  padding: 10px 15px;
   transition: all 0.3s ease-in-out;
 }
-.seccion-principal .tarjeta-grande button:hover {
+.seccion-principal .tarjeta-grande .card-footer button:hover {
   transform: scale(1.08);
   filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.3));
 }
-.seccion-principal .tarjeta-grande button a {
+.seccion-principal .tarjeta-grande .card-footer button a {
   text-decoration: none;
   color: #000000;
   font-weight: 700;
@@ -306,7 +326,7 @@ nav ul li a:hover, nav ul li a.active {
   border: none;
   border-radius: 7px;
   background-color: #00fca8;
-  padding: 3px 10px;
+  padding: 10px 15px;
   transition: all 0.3s ease-in-out;
   margin-top: 30px;
 }

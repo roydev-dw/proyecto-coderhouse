@@ -6,9 +6,12 @@
     h3 {
       text-transform: uppercase;
     }
-
-    button {
-      @include btn-verde;
+    .card-footer {
+      height: 70px;
+      button {
+        @include btn-verde;
+      }
     }
+    
   }
 }
