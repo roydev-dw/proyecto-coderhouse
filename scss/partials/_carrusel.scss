@@ -2,9 +2,10 @@
 .seccion-carrusel {
   @include margin-tb(100px, 100px);
   .carousel-indicators {
-    gap: 30px;
+    gap: 20px;
     button {
-      @include tamaños(60px, 8px);
+      @include tamaños(60px, 10px);
+      padding: outside 10px;
       border-radius: $redondeo-bajo;
       background-color: $blanco;
       border: none;
