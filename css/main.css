@@ -95,11 +95,12 @@ nav ul li a:hover, nav ul li a.active {
   margin-bottom: 100px;
 }
 .seccion-carrusel .carousel-indicators {
-  gap: 30px;
+  gap: 20px;
 }
 .seccion-carrusel .carousel-indicators button {
   width: 60px;
-  height: 8px;
+  height: 10px;
+  padding: outside 10px;
   border-radius: 7px;
   background-color: #ffffff;
   border: none;
