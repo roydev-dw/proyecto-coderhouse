@@ -5,17 +5,13 @@
 /* TÍTULOS */
 .contenedor-titulo {
   @include margin-t;
-  padding: 0;
-
-  .titulo-pagina {
-    padding: 20px 0;
-    text-align: center;
-    background-image: $degradado-azul-verde;
-    border-radius: $redondeo-alto;
-    text-transform: uppercase;
-    color: $blanco;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-  }
+  padding: 20px 0;
+  text-align: center;
+  background-image: $degradado-azul-verde;
+  border-radius: $redondeo-alto;
+  text-transform: uppercase;
+  color: $blanco;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 /* ARTICULOS */
