@@ -2,3 +2,4 @@ css/style.css*
 .vscode
 node_modules
 *.css.map
+.editorconfig
