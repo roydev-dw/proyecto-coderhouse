@@ -14,13 +14,3 @@ menuHamburguesa.addEventListener("click", () => {
         mainContenido.style.marginTop = '0';
     }
 });
-
-avisoCookies.classList.add('active');
-fondoAvisoCookies.classList.add('active')
-
-botonAceptarCookies.addEventListener('click', () => {
-    avisoCookies.classList.remove('active');
-    fondoAvisoCookies.classList.remove('active');
-
-    localStorage.setItem('coockies-aceptadas', true);
-});
