@@ -1,6 +1,6 @@
 # Blog - Tecnología e Informática 🌐
 
-![Captura de Pantalla](https://i.postimg.cc/D0ppjHM5/tecnologia-e-informatica.png)
+![Captura de Pantalla](https://i.postimg.cc/tCcqYgsQ/tecnologia-e-informatica.png)
 
 <br>
 
